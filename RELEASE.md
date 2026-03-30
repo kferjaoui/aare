@@ -2,9 +2,17 @@
 
 ## HEAD 
 
-### New Features: 
 
+### New Features:
+
+- Added a new Minuit2-based fitting framework for ``Gaussian``, ``RisingScurve``, ``FallingScurve``, ``Pol1`` and ``Pol2`` models.
 - setter and getter for nSigma for ClusterFinder ``aare.ClusterFinder().nSigma = 2``, ``aare.ClusterFinderMT().set_nSigma(2)`` 
+
+### Bugfixes:
+
+- Fixed ``split_task(first, last, n_threads)`` so task ranges now correctly respect the ``first`` offset. Previously, non-zero starting indices could generate incorrect subranges.
+
+
 
 ## 2026.3.17
 
